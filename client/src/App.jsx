@@ -8,6 +8,7 @@ import BookAppointment from './pages/BookAppointment';
 import CentersScreen from './pages/CentersScreen';
 import NewsScreen from './pages/NewsScreen';
 import ReportScreen from './pages/ReportScreen';
+import SuccessAppointment from './components/SuccessAppointment';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/centers' element={<CentersScreen/>}/>
         <Route path='/news' element={<NewsScreen/>}/>
         <Route path='/report' element={<ReportScreen/>}/>
+        <Route path='/appointment/success' element={<SuccessAppointment/>}/>
       </Routes>
     </Router>
   );

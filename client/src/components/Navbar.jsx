@@ -4,7 +4,7 @@ import LanguageIcon from '../assets/Icon ion-ios-world-outline.svg';
 
 const Navbar = () => {
   return (
-    <div className='flex w-screen justify-between items-center'>
+    <div className='flex w-screen justify-between items-center px-10'>
       <img src={UserIcon} alt='user-account icon' className=' w-6' />  
       <h1 className=' text-4xl text-white'>MINDCARE</h1>
       <img src={LanguageIcon} alt="language change icon" className=' w-6'  />
