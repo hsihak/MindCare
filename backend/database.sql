@@ -2,6 +2,7 @@ CREATE DATABASE SAAD;
 
 USE SAAD;
 
+
 CREATE TABLE Users(
 	UserID BIGINT PRIMARY KEY,
     UserType VARCHAR(20),
@@ -12,7 +13,7 @@ CREATE TABLE Users(
 );
 
 CREATE TABLE Appointment(
-	AppointmentID BIGINT PRIMARY KEY,
+	AppointmentID BIGINT PRIMARY KEY AUTO_INCREMENT,
     UserID BIGINT,
     StartTime VARCHAR(10),
     EndTime VARCHAR(10),
@@ -56,10 +57,10 @@ INSERT INTO Appointment(
     LastName
 )
 VALUES
-(5001, 1001, "9 AM", "10 AM", "Dr. Heisenberg", '2023-12-07', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover"),
-(5002, 1001, "12 PM", "1 PM", "Dr. Heisenberg", '2023-12-07', '2001-06-05', 2254489654, 1123654789, "John", "Cena"),
-(5003, 1002, "11 AM", "12 PM", "Dr. Los Pollos Hermanos", '2023-12-09', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover"),
-(5004, 1003, "4 PM", "5 PM", "Dr. Heisenberg", '2023-12-11', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover");
+(5001, 1001, "9:00 AM", "10 AM", "Dr. Heisenberg", '2023-12-07', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover"),
+(5002, 1001, "12:00 PM", "1 PM", "Dr. Heisenberg", '2023-12-07', '2001-06-05', 2254489654, 1123654789, "John", "Cena"),
+(5003, 1002, "11:00 AM", "12 PM", "Dr. Los Pollos Hermanos", '2023-12-09', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover"),
+(5004, 1003, "4:00 PM", "5 PM", "Dr. Heisenberg", '2023-12-11', '2002-11-12', 5647596842, 4423578964, "Ben", "Dover");
 
 SELECT * FROM Users;
 SELECT * FROM Appointment;

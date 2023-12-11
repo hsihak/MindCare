@@ -2,7 +2,7 @@ import React from 'react';
 
 const Layout = ({ children }) => {
   return (
-      <main className=' bg-[#0B233B] h-screen w-screen'>
+      <main className=' bg-[#0B233B] w-screen'>
         {children}
       </main>
   );

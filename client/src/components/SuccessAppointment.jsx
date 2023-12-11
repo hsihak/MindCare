@@ -11,7 +11,7 @@ const SuccessAppointment = () => {
     <div>
         <Layout>
         <Navbar/>
-        <div className=' border-white flex text-white bg-subheaderBg py-3 uppercase'>
+        <div className=' border-white flex text-white bg-subheaderBg uppercase'>
             <div className='flex items-center pl-6'>
                 <IoChevronBackOutline />
                 <Link to='/appointment'>
@@ -20,7 +20,7 @@ const SuccessAppointment = () => {
             </div>
         </div>
 
-        <div className='flex justify-center items-center flex-col text-white text-2xl'>
+        <div className='flex justify-center items-center flex-col text-white text-2xl h-screen'>
             <img src={Logo} alt="mind care logo" className=" w-1/4 bg-transparent" />
             <p>Appointment Booked Successfully</p>
             <p>Thank you for Choosing MindCare</p>
