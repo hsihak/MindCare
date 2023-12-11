@@ -8,12 +8,15 @@ const DashboardScreen = () => {
   return (
     <>
         <Layout>
+    <div className=' h-screen'>
             <Navbar/>
             <SubNavbar/>
 
             {/* Hero Section */}
             <HeroSection/>
+      </div>
         </Layout>
+
     </>
   )
 }

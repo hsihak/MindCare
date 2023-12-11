@@ -67,6 +67,22 @@ button:focus-visible {
   }
 } */
 
+/* Assuming the class is applied to the parent container */
+.MuiInputBase-root {
+  color: #ffffff !important;
+}
+
+/* To override any specific styles */
+
+
+/* To make the button white */
+
+/* Optional: To remove the ripple effect on the button */
+.MuiTouchRipple-root {
+  display: none !important;
+}
+
+
 
 @tailwind base;
 @tailwind components;
